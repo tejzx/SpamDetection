@@ -1,4 +1,4 @@
-# SpamDetection
+# Spam Detection
 This repository contains a Jupyter Notebook implementation of a spam detection system using machine learning techniques. The project explores a dataset of messages and builds a classification model to distinguish between spam and non-spam messages.
 
 ## Introduction
