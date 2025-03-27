@@ -1,61 +1,64 @@
-# Spam Detection
-This repository contains a Jupyter Notebook implementation of a spam detection system using machine learning techniques. The project explores a dataset of messages and builds a classification model to distinguish between spam and non-spam messages.
+# 📧 Spam Detection System
 
-## Introduction
-Spam detection is a common application of natural language processing (NLP) and machine learning. This project demonstrates how to process, analyze, and classify text messages using the Naïve Bayes algorithm along with Scikit-learn pipelines.
+## 🚀 Project Overview
+This project builds a **Spam Detection System** using **Natural Language Processing (NLP)** and **Machine Learning** to classify messages as **spam or ham (not spam)**.
 
-## Features
-- Text preprocessing and feature extraction using `CountVectorizer`
-- Machine learning pipeline for classification
-- Model evaluation with accuracy, precision, recall, F1 score, and ROC-AUC metrics
-- Visualization of results with tools like word clouds
+## 📂 Project Structure
+```
+├── data/                 # Dataset and cleaned data files
+├── notebooks/            # Jupyter notebooks for EDA & model training
+├── src/                  # Python scripts for preprocessing & model training
+├── models/               # Saved trained models
+├── README.md             # Project documentation
+├── requirements.txt      # Dependencies
+```
 
-## Dataset
-The dataset is sourced from a public GitHub repository and includes labeled data for spam and non-spam messages.
+## 📊 Dataset Description
+The dataset includes:
+- **Text Messages**: Collection of real-world spam and ham messages.
+- **Labels**: Each message is labeled as either `spam` or `ham`.
 
-### Dataset Details
-- **Source**: [Spam Dataset](https://github.com/Apaulgithub/oibsip_taskno4)
-- **Columns**: Contains message texts and their corresponding labels (spam or ham).
+## 🛠️ Installation
+To run this project locally, follow these steps:
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/Spam-Detection.git
+cd Spam-Detection
 
-## Setup and Installation
-1. Clone the repository:
-    ```bash
-    git clone <repository_url>
-    ```
-2. Install the required Python libraries:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3. Open the Jupyter Notebook:
-    ```bash
-    jupyter notebook Spam.ipynb
-    ```
+# Install dependencies
+pip install -r requirements.txt
+```
 
-## Usage
-1. Run all cells in the `Spam.ipynb` notebook.
-2. The notebook performs the following:
-   - Loads and explores the dataset.
-   - Preprocesses the text data.
-   - Trains a Naïve Bayes model.
-   - Evaluates model performance with detailed metrics.
+## 🔍 Data Preprocessing
+- **Text Cleaning**: Removing special characters, stopwords, and converting text to lowercase.
+- **Feature Extraction**: Using TF-IDF vectorization.
+- **Handling Imbalanced Data**: Using oversampling (SMOTE) or undersampling.
 
-## Results
-The notebook provides:
-- A confusion matrix
-- Classification report (accuracy, precision, recall, F1 score)
-- Visualizations like word clouds and ROC curves
+## 🤖 Machine Learning Models
+- **Naïve Bayes**: Common baseline for text classification.
+- **Logistic Regression**: For binary classification.
+- **Random Forest**: For improved performance.
+- **LSTM (Deep Learning)**: For advanced text-based spam detection.
 
-## Technologies Used
-- **Programming Language**: Python
-- **Libraries**:
-  - Pandas and NumPy for data manipulation
-  - Matplotlib and Seaborn for data visualization
-  - Scikit-learn for machine learning
-  - WordCloud for text visualization
+## 📈 Evaluation Metrics
+- Accuracy
+- Precision, Recall, F1-score
+- ROC-AUC Score
 
-## Contributing
-Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure that your code adheres to the project's guidelines.
+## 📌 How to Use
+Run the Jupyter Notebook:
+```bash
+jupyter notebook Spam.ipynb
+```
+Train and test models using `src/model_training.py`.
 
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+## 🔗 References
+- [Scikit-learn](https://scikit-learn.org/stable/)
+- [NLTK](https://www.nltk.org/)
+- [Pandas Documentation](https://pandas.pydata.org/docs/)
 
+## 🤝 Contributing
+Want to contribute? Fork the repo and submit a pull request!
+
+## 📜 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
